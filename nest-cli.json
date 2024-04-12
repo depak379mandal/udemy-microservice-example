@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/udemy-arch-test/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/udemy-arch-test/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/udemy-arch-test",
+  "projects": {
+    "udemy-arch-test": {
+      "type": "application",
+      "root": "apps/udemy-arch-test",
+      "entryFile": "main",
+      "sourceRoot": "apps/udemy-arch-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/udemy-arch-test/tsconfig.app.json"
+      }
+    },
+    "api-gateway": {
+      "type": "application",
+      "root": "apps/api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+      }
+    },
+    "course": {
+      "type": "application",
+      "root": "apps/course",
+      "entryFile": "main",
+      "sourceRoot": "apps/course/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/course/tsconfig.app.json"
+      }
+    },
+    "teacher": {
+      "type": "application",
+      "root": "apps/teacher",
+      "entryFile": "main",
+      "sourceRoot": "apps/teacher/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/teacher/tsconfig.app.json"
+      }
+    },
+    "student": {
+      "type": "application",
+      "root": "apps/student",
+      "entryFile": "main",
+      "sourceRoot": "apps/student/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/student/tsconfig.app.json"
+      }
+    },
+    "purchase": {
+      "type": "application",
+      "root": "apps/purchase",
+      "entryFile": "main",
+      "sourceRoot": "apps/purchase/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/purchase/tsconfig.app.json"
+      }
+    }
+  }
+}
